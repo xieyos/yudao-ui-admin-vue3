@@ -86,49 +86,6 @@
         mode="pop"
         @success="handleLogin"
       />
-      <el-col :span="24" class="px-10px">
-        <el-form-item>
-          <el-row :gutter="5" justify="space-between" style="width: 100%">
-            <el-col :span="8">
-              <XButton
-                :title="t('login.btnMobile')"
-                class="w-full"
-                @click="setLoginState(LoginStateEnum.MOBILE)"
-              />
-            </el-col>
-            <el-col :span="8">
-              <XButton
-                :title="t('login.btnQRCode')"
-                class="w-full"
-                @click="setLoginState(LoginStateEnum.QR_CODE)"
-              />
-            </el-col>
-            <el-col :span="8">
-              <XButton
-                :title="t('login.btnRegister')"
-                class="w-full"
-                @click="setLoginState(LoginStateEnum.REGISTER)"
-              />
-            </el-col>
-          </el-row>
-        </el-form-item>
-      </el-col>
-      <el-divider content-position="center">{{ t('login.otherLogin') }}</el-divider>
-      <el-col :span="24" class="px-10px">
-        <el-form-item>
-          <div class="w-full flex justify-between">
-            <Icon
-              v-for="(item, key) in socialList"
-              :key="key"
-              :icon="item.icon"
-              :size="30"
-              class="anticon cursor-pointer"
-              color="#999"
-              @click="doSocialLogin(item.type)"
-            />
-          </div>
-        </el-form-item>
-      </el-col>
     </el-row>
   </el-form>
 </template>
