@@ -15,7 +15,7 @@ export const rules = reactive({
   totalStock: [required]
 })
 
-// CrudSchema https://doc.iocoder.cn/vue3/crud-schema/
+// CrudSchema https://doc.qtvz.com/vue3/crud-schema/
 const crudSchemas = reactive<CrudSchema[]>([
   {
     label: '秒杀活动名称',

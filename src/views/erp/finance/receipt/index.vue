@@ -1,9 +1,4 @@
 <template>
-  <doc-alert
-    title="【财务】采购付款、销售收款"
-    url="https://doc.iocoder.cn/sale/finance-payment-receipt/"
-  />
-
   <ContentWrap>
     <!-- 搜索工作栏 -->
     <el-form
@@ -389,6 +384,6 @@ onMounted(async () => {
   userList.value = await UserApi.getSimpleUserList()
   accountList.value = await AccountApi.getAccountSimpleList()
 })
-// TODO 芋艿：可优化功能：列表界面，支持导入
-// TODO 芋艿：可优化功能：详情界面，支持打印
+// TODO xieyos：可优化功能：列表界面，支持导入
+// TODO xieyos：可优化功能：详情界面，支持打印
 </script>

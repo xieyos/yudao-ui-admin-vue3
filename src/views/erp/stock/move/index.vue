@@ -1,9 +1,4 @@
 <template>
-  <doc-alert
-    title="【库存】库存调拨、库存盘点"
-    url="https://doc.iocoder.cn/erp/stock-move-check/"
-  />
-
   <ContentWrap>
     <!-- 搜索工作栏 -->
     <el-form
@@ -354,6 +349,6 @@ onMounted(async () => {
   warehouseList.value = await WarehouseApi.getWarehouseSimpleList()
   userList.value = await UserApi.getSimpleUserList()
 })
-// TODO 芋艿：可优化功能：列表界面，支持导入
-// TODO 芋艿：可优化功能：详情界面，支持打印
+// TODO xieyos：可优化功能：列表界面，支持导入
+// TODO xieyos：可优化功能：详情界面，支持打印
 </script>

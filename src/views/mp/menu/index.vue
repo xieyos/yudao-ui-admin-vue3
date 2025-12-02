@@ -1,5 +1,4 @@
 <template>
-  <doc-alert title="公众号菜单" url="https://doc.iocoder.cn/mp/menu/" />
   <!-- 搜索工作栏 -->
   <ContentWrap>
     <el-form class="-mb-15px" ref="queryFormRef" :inline="true" label-width="68px">
@@ -267,7 +266,7 @@ const menuListToBackend = () => {
 }
 
 // 将前端的 menu，转换成后端接收的 menu
-// TODO: @芋艿，需要根据后台API删除不需要的字段
+// TODO: @xieyos，需要根据后台API删除不需要的字段
 const menuToBackend = (menu: any) => {
   const result = {
     ...menu,

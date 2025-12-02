@@ -1,10 +1,5 @@
 <!-- 工作流 - 抄送我的流程 -->
 <template>
-  <doc-alert
-    title="审批转办、委派、抄送"
-    url="https://doc.iocoder.cn/bpm/task-delegation-and-cc/"
-  />
-
   <ContentWrap>
     <!-- 搜索工作栏 -->
     <el-form ref="queryFormRef" :inline="true" class="-mb-15px" label-width="68px">
@@ -44,7 +39,7 @@
   <!-- 列表 -->
   <ContentWrap>
     <el-table v-loading="loading" :data="list">
-      <!-- TODO 芋艿：增加摘要 -->
+      <!-- TODO xieyos：增加摘要 -->
       <el-table-column align="center" label="流程名" prop="processInstanceName" min-width="180" />
       <el-table-column label="摘要" prop="summary" min-width="180">
         <template #default="scope">

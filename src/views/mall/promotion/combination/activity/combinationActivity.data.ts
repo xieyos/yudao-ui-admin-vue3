@@ -13,7 +13,7 @@ export const rules = reactive({
   virtualGroup: [required]
 })
 
-// CrudSchema https://doc.iocoder.cn/vue3/crud-schema/
+// CrudSchema https://doc.qtvz.com/vue3/crud-schema/
 const crudSchemas = reactive<CrudSchema[]>([
   {
     label: '拼团名称',
